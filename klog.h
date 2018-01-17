@@ -9,10 +9,10 @@
 
 
 #define __USBF_TOSTRING(x)        #x
-#define _usbf_TOSTRING(x)         __USBF_TOSTRING(x)
+#define _USBF_TOSTRING(x)         __USBF_TOSTRING(x)
 
 #define writelog(level, fmt...)        \
-    printk(level __FILE__ ":" _usbf_TOSTRING(__LINE__)" - " fmt)
+    printk(level __FILE__ ":" _USBF_TOSTRING(__LINE__)" - " fmt)
 
 #define logdebug(fmt...)        writelog(KERN_DEBUG, fmt)
 #define loginfo(fmt...)         writelog(KERN_INFO, fmt)

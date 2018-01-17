@@ -1,4 +1,4 @@
-TARGET=usb-filter
+TARGET=usbfilter
 TARGET_BIN=$(TARGET).ko
 obj-m += $(TARGET).o
 $(TARGET)-objs := usb_filter.o usbf_proc.o
